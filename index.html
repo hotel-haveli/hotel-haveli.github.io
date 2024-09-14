@@ -9,15 +9,21 @@
     <style>
         body {
         font-family: Arial, sans-serif;
+        /*display: flex; /* Use flexbox for the body */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        height: 100vh; /* Full height of the viewport */
         margin: 0;
         padding: 0;
         }
 
-        header {
+        .header {
         background-color: #333;
         color: #fff;
         padding: 20px;
         text-align: center;
+        display: flex; /* Use flexbox for alignment */
+        align-items: center; /* Center items vertically */
         }
 
         main {
@@ -41,8 +47,10 @@
     </style>
 </head>
 <body>
-    <img src="images/haveli_logo.png" alt="Logo" class="logo">
-    <h1>HOTEL HAVELI - GONDAL</h1>
+    <div class="header">
+        <img src="images/haveli_logo.png" alt="Logo" class="logo">
+        <h1>HOTEL HAVELI - GONDAL</h1>
+    </div>
     <br>
     <!-- Your content goes here -->
     <h2>Address: Court Rd, above SBI bank, Mahadev Bari, Gondal, Gujarat 360311</h2>
