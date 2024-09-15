@@ -20,3 +20,12 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+.logo {
+  float: left;
+  margin-right: 10px; /* Space between logo and heading */
+}
+h1 {
+  display: inline; /* Makes the h1 inline */
+  vertical-align: middle; /* Aligns vertically with the logo */
+}
