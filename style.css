@@ -1,14 +1,75 @@
 body {
   font-family: Arial, sans-serif;
+  /*display: flex; /* Use flexbox for the body */
+  justify-content: center;
+  /* Center content horizontally */
+  align-items: center;
+  /* Center content vertically */
   margin: 0;
+  height: 100vh;
+  /* Full height of the viewport */
   padding: 0;
+  background-color: #f9f9f9;
+  background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
 }
 
-header {
+a {
+  color: #000000;
+  /* Change to a more attractive color */
+  text-decoration: none;
+  /* Remove underline */
+  font-weight: bold;
+  /* Make it stand out */
+  font-size: 24px;
+}
+
+a:hover {
+  text-decoration: underline;
+  /* Underline on hover */
+}
+
+.iframe-container {
+  border: 2px solid #007bff;
+  /* Add a border around the iframe */
+  border-radius: 8px;
+  /* Rounded corners */
+  padding: 10px;
+  /* Add some padding */
+  transition: transform 0.3s;
+  /* Add a transition effect */
+}
+
+.iframe-container:hover {
+  transform: scale(1.02);
+  /* Slightly enlarge on hover */
+}
+
+h2 {
+  background-color: #f0f8ff;
+  /* Light background color */
+  padding: 10px 15px;
+  /* Padding around the text */
+  border-radius: 5px;
+  /* Rounded corners */
+  color: #333;
+  /* Text color */
+  font-family: 'Arial', sans-serif;
+  /* Font style */
+  margin: 20px 0;
+  /* Margin above and below */
+  text-align: center;
+  /* Center the text */
+}
+
+.header {
   background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
+  display: flex;
+  /* Use flexbox for alignment */
+  align-items: center;
+  /* Center items vertically */
 }
 
 main {
@@ -22,10 +83,104 @@ footer {
 }
 
 .logo {
-  float: left;
-  margin-right: 10px; /* Space between logo and heading */
+  max-width: 100px;
+  /* Set the maximum width of the logo */
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-right: 10px;
+  /* Space between logo and heading */
 }
+
 h1 {
-  display: inline; /* Makes the h1 inline */
-  vertical-align: middle; /* Aligns vertically with the logo */
+  font-size: 24px;
+}
+
+iframe {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+h3 {
+  background-color: #e0f7fa;
+  /* Light background color */
+  padding: 10px;
+  /* Padding around the text */
+  border-radius: 5px;
+  /* Rounded corners */
+  color: #00796b;
+  /* Text color */
+  font-family: 'Arial', sans-serif;
+  /* Font style */
+  margin: 20px 0;
+  /* Margin above and below */
+  text-align: center;
+  /* Center the text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  font-size: 18px;
+  /* Adjust the font size */
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows items to wrap to the next line */
+  justify-content: center;
+  /* Centers the images */
+  gap: 10px;
+  /* Space between images */
+  padding: 20px;
+  /* Padding around the gallery */
+}
+
+.image-item {
+  flex: 1 1 200px;
+  /* Flex-grow, flex-shrink, and base width */
+  max-width: 300px;
+  /* Maximum width for each image item */
+}
+
+.image-item img {
+  width: 100%;
+  /* Makes the image responsive */
+  height: auto;
+  /* Maintains aspect ratio */
+  border-radius: 5px;
+  /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+}
+
+address {
+  background-color: #f0f8ff;
+  /* Light background color */
+  padding: 15px;
+  /* Padding around the text */
+  border-radius: 5px;
+  /* Rounded corners */
+  color: #333;
+  /* Text color */
+  margin: 20px 0;
+  /* Margin above and below */
+  text-align: center;
+  /* Center the text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  font-size: 20px;
+  /* Adjust the font size */
+}
+
+address:hover {
+  background-color: #e0f7fa;
+  /* Change background on hover */
+  cursor: pointer;
+  /* Change cursor to pointer */
 }
