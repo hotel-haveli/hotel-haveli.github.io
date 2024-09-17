@@ -13,7 +13,7 @@ body {
   background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
 }
 
-a {
+h3 .telephone-link {
   color: #000000;
   /* Change to a more attractive color */
   text-decoration: none;
@@ -23,7 +23,7 @@ a {
   font-size: 24px;
 }
 
-a:hover {
+h3 .telephone-link:hover {
   text-decoration: underline;
   /* Underline on hover */
 }
@@ -183,4 +183,59 @@ address:hover {
   /* Change background on hover */
   cursor: pointer;
   /* Change cursor to pointer */
+}
+
+footer .privacy-policy-link {
+  color: #007bff;
+  /* Change color as needed */
+  font-weight: bold;
+  /* Make it stand out */
+  text-decoration: underline;
+  /* Underline if desired */
+}
+
+footer .privacy-policy-link:hover {
+  color: #0056b3;
+  /* Darker color on hover */
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+.breadcrumb {
+  padding: 10px 16px;
+  background-color: #f0f0f0;
+  /* Light background for contrast */
+}
+
+.breadcrumb ul {
+  list-style: none;
+  /* Remove default bullet points */
+  padding: 0;
+  /* Remove default padding */
+}
+
+.breadcrumb li {
+  display: inline;
+  /* Display list items inline */
+  font-size: 16px;
+  /* Adjust font size as needed */
+}
+
+.breadcrumb li a {
+  color: #0275d8;
+  /* Link color */
+  text-decoration: none;
+  /* Remove underline */
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+  /* Underline on hover */
+}
+
+.breadcrumb li+li:before {
+  content: " > ";
+  /* Separator between breadcrumb items */
 }
