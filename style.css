@@ -239,3 +239,13 @@ footer ul {
   content: " > ";
   /* Separator between breadcrumb items */
 }
+
+.developer-credit {
+  color: #007bff; /* Change to desired color */
+  text-decoration: none; /* Remove underline */
+  font-weight: normal; /* Normal weight */
+}
+
+.developer-credit:hover {
+  text-decoration: underline; /* Underline on hover */
+}
